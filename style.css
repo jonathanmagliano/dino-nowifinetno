@@ -2,12 +2,37 @@ body {
   background: #fafafa;
 }
 
-.dino {
+@font-face {
+  font-family: 'ERASBD';
+  src: url('fonts/ERASBD.eot');
+  src: url('fonts/ERASBD.eot?#iefix') format('embedded-opentype'),
+      url('fonts/ERASBD.woff') format('woff'),
+      url('fonts/ERASBD.ttf') format('truetype'),
+      url('fonts/ERASBD.svg#Calibri') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.game {
+  border-style: solid;
+  border-width: 5px;
   position: absolute;
-  bottom: 0;
-  background-image: url(dino.png);
+  left: 50%;
+  top: 50%;
+  margin-left: -500px;
+  margin-top: -150px;
+  height: 200px;
+  width: 1000px;
+}
+
+.dino {
   width: 60px;
   height: 60px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50px;
+  margin-bottom: 2px;
+  background-image: url(imgs/dino.png);
 }
 
 .cactus {
@@ -15,32 +40,154 @@ body {
   width: 60px;
   height: 60px;
   bottom: 0;
-  background-image: url(cactus.png);
-}
-
-.game-over {
-  text-align: center;
-  color: #666;
-  margin: 50px 0;
-  font-family: arial;
+  background-image: url(imgs/cactus.png);
 }
 
 @keyframes slideright {
   from {
       background-position: 70000%;
   }
-  to {
-      background-position: 0%;
+  to{
+      background-position: 0;
   }
 }
 
 .background {
   position: absolute;
-  bottom: 0px;
-  background-image: url('background.png');
+  bottom: 0;
+  background-image: url(imgs/background.png);
   background-repeat: repeat-x;
-  animation: slideright 600s infinite linear;
-  -webkit-animation: slideright 600s infinite linear;
   width: 100%;
   height: 200px;
+}
+
+#botao1 {
+  font-family:'ERASBD';
+  font-size: 35px;
+  color: white;
+  background-color: #515964;
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  margin-left:-110px;
+  margin-top: 100px;
+  width: 220px;
+  height: 80px;
+}
+
+#avisoGrande {
+  font-family:'ERASBD';
+  font-size: 100px;
+  text-align: center;
+}
+
+#avisoPontos {
+  font-family:'ERASBD';
+  font-size: 35px;
+  text-align: center;
+  margin-top: -70px;
+}
+
+#botaoVoltar {
+  font-family:'ERASBD';
+  font-size: 35px;
+  color: white;
+  background-color: #515964;
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  margin-left: -110px;
+  margin-top: 150px;
+  width: 220px;
+  height: 80px;
+}
+
+.avisoGameOver {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left:-500px;
+  margin-top:-300px;
+  width: 1000px;
+  height: 200px;
+}
+
+#pagGameOver {
+  display: none;
+}
+
+.lampada1 {
+  width: 65px;
+  height: 130px;
+  left: 50%;
+  top: 50%;
+  margin-left: 1050px;
+  margin-top: 190px;
+}
+
+#dark {
+  display: block;
+  left: 50%;
+  top: 50%;
+  margin-left: 400px;
+  margin-top: -300px;
+  width: 70px;
+  height: 120px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(imgs/dark.png);
+}
+
+#off {
+  position: absolute;
+  font-family:'ERASBD';
+  font-size: 20px;
+  color: white;
+  background-color: #515964;
+  position: absolute; 
+  width: 65px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin-top: -210px;
+  margin-left: 398px;
+}
+
+.score {
+  font-family:'ERASBD';
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -480px;
+  margin-top: -230px;
+}
+
+#light {
+  display: none;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  top: 50%;
+  margin-left: 373px;
+  margin-top: -327px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(imgs/light.png);
+}
+
+#on {
+  display: none;
+  position: absolute;
+  font-family:'ERASBD';
+  font-size: 20px;
+  color: #fcea2b;
+  background-color: #515964;
+  position: absolute; 
+  width: 65px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin-top: -210px;
+  margin-left: 398px;
 }

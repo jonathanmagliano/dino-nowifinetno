@@ -7,8 +7,40 @@
   <script src="script.js" charset="UTF-8" defer></script>
 </head>
 <body>
-  <div class="background">
-    <div class="dino"></div>
-  </div>
+<div id="esconder">
+
+    <div class="lampada1">
+        <div id="dark"></div>        
+        <button id="off" onclick="acenderLuz()">OFF</button>
+        <div id="light"></div>        
+        <button id="on" onclick="apagarLuz()">ON</button>
+    </div>
+
+    <div class="mensagem">
+        <h1 id="perdeu"></h1>
+    </div>
+
+    <div class="score">
+        <h3 id="scoreNumber">Score: 00</h3>
+    </div>
+
+    <div class="game">
+        <div class="background" id="idBack">
+            <div class="dino" id="dinoId">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="gameOn()" id="botao1">Play</button>
+</div>
+
+<div id="pagGameOver">
+    <div class="avisoGameOver">
+        <h1 id="avisoGrande">Game Over</h1>
+        <h3 id="avisoPontos"></h3>
+        <button id="botaoVoltar" onclick="voltarIndex()">Back</button>
+    </div>
+</div>
+
 </body>
 </html>
